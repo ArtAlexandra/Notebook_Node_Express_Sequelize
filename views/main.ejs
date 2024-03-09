@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заметки</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <div class="groups">
+        <a href="/logout" class="exit">Выход</a>
+    </div>
+   
+    <div class="container">
+    <h1 class="main__title">Добро пожаловать, <%= username %>!</h1>
+    <form method="post" action="/add-notes" class="add-notes">
+        <h1>Добавление заметки</h1>
+        <input type="text" name="title" placeholder="Название" value="<%=title%>"/>
+        <input type="text" name="date" placeholder="Когда нужно сделать" value="<%=date%>"/>
+        <input type="text" name="desc" placeholder="Описание" value="<%=desc%>"/>
+        <% if(title!=""){ %>
+            <button type="submit">Изменить</button>    
+        <% } %>
+        <% if(title==""){ %>
+            <button type="submit">Добавить</button>    
+        <% } %>
+    </form>
+    <% if(notes.length>0){ %>
+        <div class="many_notes">
+            <% notes.forEach((el)=>{%>
+                <div class="notes">
+                    
+                        <p class="notes__title" name="node_id" value="<%=el.note_id%>"><%= el.note_title %></p>
+                        <p class="notes__date"><%= el.note_date %></p>
+                        <p class="notes__main"><%= el.note_desc %></p>
+                       <a href="/change-notes/delete/<%=el.note_id%>" class="notes__button notes__delete" >Удалить</a>
+                       <a href="/change-notes/change/<%=el.note_id%>" class="notes__button notes__change" >Изменить</a>
+                        
+                    </div>
+                   
+                    
+            <% }) %>
+        </div>
+    <% } %>
+    </div> 
+   
+</body>
+
+</html>

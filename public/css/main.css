@@ -1,0 +1,121 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+ 
+}
+*{
+  box-sizing: border-box;
+}
+body{
+    background-color: rgb(170, 218, 245);
+}
+.main__title{
+    
+    color:rgb(18, 83, 214);
+    width: fit-content;
+    margin-left: 50px;
+}
+.groups{
+    width: fit-content;
+    margin-top: 30px;
+}
+.exit{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 16px;
+    background-color: rgb(26, 99, 244);
+    color:#ffffff;
+    border-radius: 6px;
+    text-decoration: none;
+}
+.add-notes{
+    display: block;
+    width: 400px;
+    height: fit-content;
+    background-color: #ffffff;
+    color:rgb(26, 99, 244);
+    border-radius: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.add-notes button{
+    width: 300px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    background-color: rgb(26, 99, 244);
+    margin-left: auto;
+    margin-right: auto;
+    color:#ffffff;
+}
+.add-notes button:hover{
+    background-color: rgb(97, 146, 244);
+}
+.add-notes input, textarea{
+    width: 300px;
+    height: 40px;
+    border: 2px solid rgb(26, 99, 244);
+    border-radius: 6px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.many_notes{
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.notes{
+    background-color: #ffffff;
+    color:rgb(26, 99, 244);
+    border-radius: 6px;
+    font-size: 18px;
+    width: 350px;
+    font-weight: 400;
+    padding-left: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+    padding-bottom: 30px;
+    display: inline-block;
+}
+.notes__title{
+    font-size: 22px;
+    font-weight: 700;
+}
+.notes__date{
+    font-style: italic;
+}
+.notes__button{
+    width: 100px;
+    height: 40px;
+    color:#ffffff;
+    border-radius: 6px;
+    border: none;
+    text-decoration: none;
+    padding: 10px;
+}
+.notes__done{
+    background-color: #2cdb26;
+}
+.notes__delete{
+    background-color:rgb(218, 20, 20);
+}
+.notes__change{
+    background-color:#eeee0a;
+}
+
+.notes__done:hover{
+    background-color: #52ea4d;
+}
+.notes__delete:hover{
+    background-color:rgb(232, 57, 57);
+}
+.notes__change:hover{
+    background-color:#dede0c;
+}
